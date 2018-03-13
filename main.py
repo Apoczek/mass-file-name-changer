@@ -35,7 +35,9 @@ class Application(tk.Frame): #TODO add event handling for "enter" and "escape"
                 i += 1
 
     def given_dir(self):
-        self.tempdir.set(filedialog.askdirectory(parent=root, initialdir=self.tempdir.get(), title='Please select a directory'))
+        self.tempdir.set(filedialog.askdirectory(parent=root,
+                                                 initialdir=self.tempdir.get(),
+                                                 title='Please select a directory'))
 
     def create_widgets(self):
 
